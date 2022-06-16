@@ -1,0 +1,14 @@
+class HelloWorld {
+    public static int fib(int n){
+        if(n==1||n==2){
+            return 1;
+        }
+        int first=fib(n-1);
+        int second=fib(n-2);
+        int ans=first+second;
+        return ans;
+    }
+    public static void main(String[] args) {
+       System.out.print(fib(5));
+    }
+}
